@@ -8,6 +8,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <script src="JS.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
 </head>
 <body>
@@ -30,8 +31,37 @@ Al elegir papel reciclado, contribuyes directamente a disminuir residuos, proteg
     para darles una segunda oportunidad y ayudar al medio ambiente</h2>
 
 <h3>PUNTOS DE ACOPIO:</h3>   
+
 <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d60207.966292436344!2d-99.00174687832033!3d19.412496999999988!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85d1e3d8fc8fd4cf%3A0x5a9fb489ae15908!2sTeschi!5e0!3m2!1ses-419!2smx!4v1768462453001!5m2!1ses-419!2smx" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+ 
+
+
 </div>
+<section class="form-section">
+  <div class="form-card">
+    <h2>¿Quieres un centro de acopio cerca de tu localidad?</h2>
+    <p>Déjanos un comentario</p>
+
+    <form onsubmit="enviar(event)">
+      <div class="campo">
+        <label>Nombre</label>
+        <input type="text" placeholder="Tu nombre">
+      </div>
+
+      <div class="campo">
+        <label>Correo electrónico</label>
+        <input type="email" placeholder="tucorreo@email.com">
+      </div>
+
+      <div class="campo">
+        <label>Dirección</label>
+        <input type="text" placeholder="Tu dirección">
+      </div>
+
+      <button type="submit">Enviar</button>
+    </form>
+  </div>
+</section>
 </section>
 <footer class="pta"><p>© 2025 La Nueva Hoja</p></footer>
 </body>
