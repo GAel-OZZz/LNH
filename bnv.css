@@ -135,6 +135,75 @@ section{
   border-radius: 10px;
   box-shadow: 0 6px 15px rgba(0,0,0,0.15);
 }
+.form-section {
+  display: flex;
+  justify-content: center;
+  padding: 60px 20px;
+}
+
+.form-card {
+  background: white;
+  padding: 30px;
+  border-radius: 15px;
+  width: 100%;
+  max-width: 600px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+  text-align: center;
+}
+
+.form-card h2 {
+  color: #2e6b2f;
+  margin-bottom: 10px;
+}
+
+.form-card p {
+  color: #666;
+  margin-bottom: 25px;
+}
+
+.campo {
+  text-align: left;
+  margin-bottom: 15px;
+}
+
+.campo label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+  color: #333;
+}
+
+.campo input {
+  width: 100%;
+  padding: 12px;
+  border: 2px solid #ddd;
+  border-radius: 8px;
+  outline: none;
+  transition: 0.3s;
+  font-size: 1rem;
+}
+
+.campo input:focus {
+  border-color: #4CAF50;
+  box-shadow: 0 0 8px rgba(76,175,80,0.3);
+}
+
+button {
+  width: 100%;
+  padding: 12px;
+  background: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 1.1rem;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+button:hover {
+  background: #3d8b40;
+  transform: scale(1.02);
+}
 @media (max-width: 768px) {
 
   .cab {
@@ -176,4 +245,55 @@ section{
     height: 280px;
   }
 }
+@media (max-width: 768px) {
 
+  .cab {
+    font-size: 1.6rem;
+    padding: 15px;
+  }
+
+  .menu {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+    padding: 12px;
+  }
+
+  .menu a {
+    font-size: 0.95rem;
+    padding: 10px;
+  }
+
+  /* FORMULARIO RESPONSIVE */
+  .form-section {
+    padding: 30px 10px;
+  }
+
+  .form-card {
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 6px 18px rgba(0,0,0,0.12);
+  }
+
+  .form-card h2 {
+    font-size: 1.2rem;
+  }
+
+  .form-card p {
+    font-size: 0.95rem;
+  }
+
+  .campo input {
+    font-size: 0.95rem;
+    padding: 10px;
+  }
+
+  button {
+    font-size: 1rem;
+    padding: 10px;
+  }
+
+  .reci iframe {
+    height: 250px;
+  }
+}
